@@ -1,0 +1,101 @@
+// sass overrides for bootstrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
+
+// google font
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+// bg
+body {
+    background-color: #12111a;
+    color: white;
+}
+
+//links
+a {
+    color: #cdbecf;
+}
+
+// sidebar
+.offcanvas {
+    background-color: #332c45 !important;
+    width: auto !important;
+}
+.offcanvas-header {
+    a {
+    text-decoration: none;
+    color: white !important;
+    cursor: pointer;
+    }
+}
+.offcanvas-header .btn-close {
+    display: none;
+}
+.offcanvas .list-group-item {
+    border-color: #332c45;
+    color: #cdbecf;
+    transition: background-color 0.3s ease;
+    border-width: 0 0 1px 0;
+}
+.offcanvas .list-group-item:last-child {
+    border-bottom-width: 1px;
+}
+.offcanvas .list-group-item:hover,
+.offcanvas .list-group-item:focus {
+    background-color: #5d4b6a !important;
+    color: white;
+}
+.btn-hamburger {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+// toggle tags button
+#toggleTagFilters {
+    background-color: #cdbecf;
+    color: #332c45;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#toggleTagFilters:hover {
+    background-color: #332c45;
+    color: #cdbecf;
+}
+
+// clear tags button
+#clearFilters {
+    background-color: #cdbecf;
+    color: #332c45;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#clearFilters:hover {
+    background-color: #332c45;
+    color: #cdbecf;
+}
+
+// table
+.table thead th {
+    background-color: #332c45;
+    color: white;
+}
+.dataTables_wrapper .dataTables_filter input[type="search"]::placeholder {
+    color: #cdbecf;
+}
